@@ -7,7 +7,7 @@ using Unity.IL2CPP.CompilerServices;
 [Il2CppSetOption(Option.ArrayBoundsChecks, false)]
 [Il2CppSetOption(Option.DivideByZeroChecks, false)]
 [CreateAssetMenu(menuName = "ECS/Systems/" + nameof(MoveSystem))]
-public sealed class MoveSystem : UpdateSystem
+public sealed class MoveSystem : FixedUpdateSystem
 {
     private Filter moveFilter;
     

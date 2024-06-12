@@ -14,6 +14,7 @@ public sealed class GameInitSystem : Initializer
         var systemsGroup = World.CreateSystemsGroup();
         systemsGroup.AddSystem(CreateInstance<InputSystem>());
         systemsGroup.AddSystem(CreateInstance<MoveSystem>());
+        systemsGroup.AddSystem(CreateInstance<DestructionSystem>());
         World.AddSystemsGroup(1, systemsGroup);
     }
 }
